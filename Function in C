@@ -1,0 +1,26 @@
+#include <stdio.h>
+void max(int a, int b, int c, int d)
+{
+    int max_val = a;
+    if (b > max_val)
+    {
+        max_val = b;
+    }
+    if (c > max_val)
+    {
+        max_val = c;
+    }
+    if (d > max_val)
+    {
+        max_val = d;
+    }
+    
+    printf("%d\n", max_val);
+}
+int main()
+{
+    int a, b, c, d;
+    scanf("%d %d %d %d", &a, &b, &c, &d);
+    max(a, b, c, d);
+    return 0;
+}
