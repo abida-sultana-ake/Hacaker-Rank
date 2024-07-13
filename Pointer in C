@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+    int a, b;
+    scanf ("%d %d", &a, &b);
+    int sum, add;
+    int *p1, *p2;
+    p1 = &a;
+    p2 = &b;
+    sum = *p1 + *p2;
+    add = abs(*p1 - *p2);
+    printf("%d\n", sum);
+    printf("%d\n", add);
+    return 0;
+}
