@@ -1,0 +1,17 @@
+int main()
+{
+    int s;
+    scanf("%d", &s);
+    int a[s];
+    for(int i=0; i<s; i++)
+    {
+        scanf("%d", &a[i]);
+    }
+    int sum = 0;
+    for(int i=0; i<s; i++)
+    {
+        sum += a[i];
+    }
+    printf("%d ", sum);
+    return 0;
+}
